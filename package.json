@@ -1,0 +1,19 @@
+{
+  "name": "ewd-vista-bedboard",
+  "version": "1.0.0",
+  "description": "EWD VistA: bedboard module",
+  "main": "index.js",
+  "author": "Alexis Carlson & Sam Habiel",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shabiel/ewd-vista-bedboard.git"
+  },
+  "peerDependencies": {
+    "ewd-vista": "1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "~3.9",
+    "eslint-plugin-json": "~1.2",
+  }
+}
