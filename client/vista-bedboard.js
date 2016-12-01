@@ -2,7 +2,11 @@ let clientMethods = {};
 
 // Show Wards and Beds. Called from show application
 clientMethods.showWards = function(EWD) {
-  EWD.send({type: 'wards'}, function(responseObj) {
+  let messageObj = {
+    service: 'ewd-vista-bedboard',
+    type: 'wards'
+  };
+  EWD.send(messageObj, function(responseObj) {
     var wards = responseObj.message.wards;
     console.log(wards);
     
