@@ -3,16 +3,15 @@ let clientMethods = {};
 // Set up menu
 clientMethods.prep = function(EWD) {
   $('#app-bedboard').on('click', function(e) {
+    // Clear the page
+    $('#main-content').html('');
+    
     clientMethods.showWards(EWD);
-    return false;
   });
 };
 
 // Show Wards and Beds
 clientMethods.showWards = function(EWD) {
-  // Clear the page
-  $('#main-content').html('');
-  
   let messageObj = {
     service: 'ewd-vista-bedboard',
     type: 'wards'
