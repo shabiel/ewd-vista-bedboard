@@ -1,7 +1,10 @@
 let clientMethods = {};
 
-// Set up menu
+// Load CSS & set up nav
 clientMethods.prep = function(EWD) {
+  $('head').append('<link href="assets/stylesheets/bedboard.css" rel="stylesheet" />')
+  $('.app-nav .dropdown-menu').append('<li><a href="#" id="app-bedboard">Bedboard</a></li>');
+  
   $('#app-bedboard').on('click', function(e) {
     // Clear the page
     $('#main-content').html('');
@@ -12,6 +15,8 @@ clientMethods.prep = function(EWD) {
 
 // Show Wards and Beds
 clientMethods.showWards = function(EWD) {
+  $('#main-content').append('<div id="wards" class="row collapse"></div>');
+  
   let messageObj = {
     service: 'ewd-vista-bedboard',
     type: 'wards'
@@ -19,10 +24,7 @@ clientMethods.showWards = function(EWD) {
   EWD.send(messageObj, function(responseObj) {
     let wards = responseObj.message.wards;
     // console.log(wards);
-
-    let html='<div id="wards" class="row collapse"></div>';
-    $('#main-content').append(html);
-
+    
     wards.forEach(function(ward, index, array) {
       let html = '<div class="main col-md-4"><h2 class="sub-header">';
       html     = html + ward.name + '</h2><div class="table-responsive">';
