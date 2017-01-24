@@ -17,12 +17,13 @@
     "eslint-plugin-json": "~1.2"
   },
   "ewd_vista": {
+    "name": "Bed Board",
     "module": "ewd-vista-bedboard",
     "parentModule": "ewd-vista",
-    "securityKeys": ["FOO", "BAR"],
-    "client": {
-      "constantName": "",
-      "scriptName": ""
+    "securityKeys": ["BED", "BOARD"],
+    "clientJs": {
+      "constantName": "bedboard",
+      "scriptName": "vista-bedboard"
     }
   }
 }
