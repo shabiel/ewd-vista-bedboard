@@ -3,9 +3,8 @@ let clientMethods = {};
 // Load CSS & set up nav
 clientMethods.prep = function(EWD) {
   $('head').append('<link href="assets/stylesheets/bedboard.css" rel="stylesheet" />')
-  $('.app-nav .dropdown-menu').append('<li><a href="#" id="app-bedboard">Bedboard</a></li>');
   
-  $('#app-bedboard').on('click', function(e) {
+  $('body').on('click', '#app-bedboard', function() {
     // Clear the page
     $('#main-content').html('');
     
