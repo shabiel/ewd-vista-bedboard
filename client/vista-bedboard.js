@@ -1,19 +1,19 @@
-let clientMethods = {};
+bedBoard = {};
 
 // Load CSS & set up nav
-clientMethods.prep = function(EWD) {
+bedBoard.prep = function(EWD) {
   $('head').append('<link href="assets/stylesheets/bedboard.css" rel="stylesheet" />')
   
   $('body').on('click', '#app-bedboard', function() {
     // Clear the page
     $('#main-content').html('');
     
-    clientMethods.showWards(EWD);
+    bedBoard.showWards(EWD);
   });
 };
 
 // Show Wards and Beds
-clientMethods.showWards = function(EWD) {
+bedBoard.showWards = function(EWD) {
   $('#main-content').append('<div id="wards" class="row collapse"></div>');
   
   let messageObj = {
@@ -64,4 +64,4 @@ clientMethods.showWards = function(EWD) {
   });
 };
 
-module.exports = clientMethods;
+// module.exports = bedBoard;

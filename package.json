@@ -20,6 +20,7 @@
     "module": "ewd-vista-bedboard",
     "parentModule": "ewd-vista",
     "name": "Bed Board",
+    "clientModuleName": "bedBoard",
     "htmlName": "bedboard",
     "sortOrder": "10",
     "securityKeys": ["BED", "BOARD"]
