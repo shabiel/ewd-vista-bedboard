@@ -2,8 +2,6 @@ bedBoard = {};
 
 // Load CSS & set up nav
 bedBoard.prep = function(EWD) {
-  $('head').append('<link href="assets/stylesheets/bedboard.css" rel="stylesheet" />')
-  
   $('body').on('click', '#app-bedboard', function() {
     // Clear the page
     $('#main-content').html('');

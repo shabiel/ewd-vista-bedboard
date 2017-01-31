@@ -23,6 +23,6 @@
     "clientModuleName": "bedBoard",
     "htmlName": "bedboard",
     "sortOrder": "10",
-    "securityKeys": ["BED", "BOARD"]
+    "securityKeys": []
   }
 }
