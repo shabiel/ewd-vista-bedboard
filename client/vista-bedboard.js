@@ -1,4 +1,4 @@
-bedBoard = {};
+var bedBoard = {};
 
 // Load CSS & set up nav
 bedBoard.prep = function(EWD) {
