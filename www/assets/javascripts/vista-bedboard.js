@@ -3,8 +3,7 @@ var bedBoard = {};
 // Load CSS & set up nav
 bedBoard.prep = function(EWD) {
   $('body').on('click', '#app-bedboard', function() {
-    // Clear the page
-    $('#main-content').html('');
+    vista.switchApp();
     
     bedBoard.showWards(EWD);
   });
@@ -20,7 +19,6 @@ bedBoard.showWards = function(EWD) {
   };
   EWD.send(messageObj, function(responseObj) {
     let wards = responseObj.message.wards;
-    // console.log(wards);
     
     wards.forEach(function(ward, index, array) {
       let html = '<div class="main col-md-4"><h2 class="sub-header">';
