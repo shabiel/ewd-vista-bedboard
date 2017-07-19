@@ -2,11 +2,7 @@ var bedBoard = {};
 
 // Load CSS & set up nav
 bedBoard.prep = function(EWD) {
-  $('body').on('click', '#app-bedboard', function() {
-    vista.switchApp();
-    
-    bedBoard.showWards(EWD);
-  });
+  bedBoard.showWards(EWD);
 };
 
 // Show Wards and Beds
