@@ -1,5 +1,6 @@
 {
   "name": "ewd-vista-bedboard",
+  "engines" : { "node" : ">=6" },
   "version": "1.0.2",
   "description": "EWD VistA: bedboard module",
   "main": "index.js",
@@ -14,7 +15,6 @@
     "eslint-plugin-json": ""
   },
   "ewdVista": {
-    "module": "ewd-vista-bedboard",
     "parentModule": "ewd-vista",
     "name": "Bed Board",
     "clientModuleName": "bedBoard",
